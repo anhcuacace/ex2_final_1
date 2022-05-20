@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="185dp"
+        android:layout_height="202dp"
+        android:background="#C4C4C4"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="109dp"
+        android:layout_height="102dp"
+
+        android:layout_alignBottom="@id/view1"
+        android:layout_toRightOf="@+id/view1"
+        android:background="#961D8A"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="189dp"
+        android:layout_height="107dp"
+        android:layout_below="@+id/view2"
+        android:layout_marginLeft="187dp"
+
+        android:background="#C4C4C4"
+        android:gravity="center"
+        android:text="3"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/view4"
+        android:layout_width="93dp"
+        android:layout_height="186dp"
+        android:layout_below="@+id/view3"
+        android:background="#813434"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/view5"
+        android:layout_width="166dp"
+        android:layout_height="169dp"
+        android:layout_below="@+id/view3"
+        android:layout_alignBottom="@id/view4"
+
+        android:layout_toRightOf="@+id/view4"
+        android:background=" #BC5F5F"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/view6"
+        android:layout_width="68dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="333dp"
+        android:background="#260606"
+        android:gravity="center"
+        android:text="6"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/view7"
+        android:layout_width="91dp"
+        android:layout_height="121dp"
+        android:layout_below="@+id/view5"
+        android:layout_marginLeft="101dp"
+        android:background="#E62F2F"
+        android:gravity="center"
+        android:text="7"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/view8"
+        android:layout_width="188dp"
+        android:layout_height="89dp"
+        android:layout_below="@id/view5"
+        android:layout_toRightOf="@id/view7"
+        android:background="#9BA561"
+        android:gravity="center"
+        android:text="8"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/view9"
+        android:layout_width="101dp"
+        android:layout_height="156dp"
+        android:layout_below="@id/view7"
+        android:layout_alignParentBottom="true"
+        android:background="#C4C4C4"
+        android:gravity="center"
+        android:text="9"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/view10"
+        android:layout_width="97dp"
+        android:layout_height="164dp"
+        android:layout_below="@id/view7"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/view7"
+        android:background="#256275"
+        android:gravity="center"
+        android:text="10"
+        android:textSize="20dp" />
+</RelativeLayout>

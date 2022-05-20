@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="lựa chọn layout muốn xem"
+        android:textSize="40sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/gl">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/relative"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gl">
+
+        <Button
+            android:id="@+id/btconstaint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/design_default_color_background"
+            android:gravity="center"
+            android:text="constrain 1"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btconstaint2">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btconstaint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/design_default_color_background"
+            android:gravity="center"
+            android:text="constrain 2"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/btconstaint1"
+            app:layout_constraintRight_toLeftOf="@id/btconstaint3"
+
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/btconstaint3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/design_default_color_background"
+            android:gravity="center"
+            android:text="constrain 3"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/btconstaint2"
+            app:layout_constraintRight_toRightOf="parent"
+
+            >
+
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/btlinear"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/constraint"
+
+        >
+
+        <Button
+            android:id="@+id/btrelative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/design_default_color_background"
+            android:gravity="center"
+            android:text="Relative 1"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btrelative2"
+
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/btrelative2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/design_default_color_background"
+            android:gravity="center"
+            android:text="Relative 2"
+            android:textSize="12sp"
+
+            app:layout_constraintLeft_toRightOf="@id/btrelative1"
+            app:layout_constraintRight_toLeftOf="@id/btrelative2"
+
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/btrelative3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/design_default_color_background"
+            android:gravity="center"
+            android:text="Relative 3"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/btrelative2"
+            app:layout_constraintRight_toRightOf="parent"
+
+            >
+
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btlinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linear"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relative">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
